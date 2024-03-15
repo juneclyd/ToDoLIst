@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>ToDoList</title>
+</head>
+
+<body class="body">
+    <div class="main">
+        <h1 class="heading">TODO LIST</h1>
+        <div class="menu" id="menu">
+            <input type="text" class="textbox" placeholder="Search note..."/>
+            <details class="custom-select">
+                <summary class="radios">
+                  <input type="radio" name="item" id="default" title="ALL" checked>
+                  <input type="radio" name="item" id="item1" title="ALL">
+                  <input type="radio" name="item" id="item2" title="Complete">
+                  <input type="radio" name="item" id="item3" title="Incomplete">
+                </summary>
+                <ul class="list">
+                  <li class="listLi listLi0" id="listLiId0">
+                    <label for="item1">
+                        ALL
+                    </label>
+                  </li>
+                  <li class="listLi listLi1" id="listLiId1">
+                    <label for="item2">Complete</label>
+                  </li>
+                  <li class="listLi listLi2" id="listLiId2">
+                    <label for="item3">Incomplete</label>
+                  </li>
+                </ul>
+              </details>
+            <input class="moon" type="image" src="./img/moon.svg" />
+        </div>
+        <div class="listsDaughter">
+            <div class="lists" id="lists" onclick="">
+                <!-- <div class="listString" id="listString">
+                    <div class="CheckboxAndHeadingList">
+                        <input type="checkbox" class="checkbox" onclick="checkboxValue()">
+                        <h2 class="headingList">Note #1</h2>
+                    </div>
+                    <div class="penAndBasket">
+                        <input class="pen" type="image" src="./img/pen.svg" />
+                        <input class="basket" type="image" src="./img/basket.svg" />
+                    </div>
+                </div>
+                <div class="line"></div> -->
+            </div> 
+        </div>
+        <div class="circle">
+            <input class="circle" type="image" src="./img/circle.svg" />
+        </div>
+    </div>
+    <div class="add">
+        <div class="addDaughter">
+            <h3>New Note</h3>
+            <input type="text" class="textboxAdd" placeholder="Input your note..."/>
+            <div class="addButtons">
+                <a href="#" class="cancel">Cancel</a>
+                <a href="#" class="aplly">Apply</a>  
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
